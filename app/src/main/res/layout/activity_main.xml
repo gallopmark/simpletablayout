@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.galloped.tablayout.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        app:tl_selectedTextColor="#007AFF"
+        app:tl_unSelectTextColor="#999999"
+        app:tl_iconWidth="24dp"
+        app:tl_iconHeight="24dp"
+        app:tl_drawablePadding="2dp"
+        app:tl_selectedTextStyle="bold"
+        app:tl_unSelectTextStyle="normal"
+        android:layout_gravity="bottom"
+        android:layout_height="60dp" />
+</FrameLayout>

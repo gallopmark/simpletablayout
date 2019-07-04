@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabLayout">
+        <attr name="tl_selectedTextColor" format="color" />
+        <attr name="tl_unSelectTextColor" format="color" />
+        <attr name="tl_tabWidth" format="dimension" />
+        <attr name="tl_tab_space_equal" format="boolean" />
+        <attr name="tl_iconWidth" format="dimension" />
+        <attr name="tl_iconHeight" format="dimension" />
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="tl_drawablePadding" format="dimension" />
+        <attr name="tl_textSize" format="dimension" />
+        <attr name="tl_textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="tl_selectedTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="tl_unSelectTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="tl_selectedTextSize" format="dimension" />
+        <attr name="tl_unSelectTextSize" format="dimension" />
+        <attr name="tl_animEnabled" format="dimension" />
+        <attr name="tl_reselectedAnimEnabled" format="boolean" />
+        <attr name="tl_animIsRecycle" format="boolean" />
+        <attr name="tl_animDuration" format="integer" />
+        <attr name="tl_alphaStart" format="float" />
+    </declare-styleable>
+</resources>
