@@ -7,13 +7,13 @@
     <com.galloped.tablayout.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        app:tl_selectedTextColor="#007AFF"
-        app:tl_unSelectTextColor="#999999"
-        app:tl_iconWidth="24dp"
-        app:tl_iconHeight="24dp"
-        app:tl_drawablePadding="2dp"
-        app:tl_selectedTextStyle="bold"
-        app:tl_unSelectTextStyle="normal"
+        app:tab_selectedTextColor="#007AFF"
+        app:tab_unSelectTextColor="#999999"
+        app:tab_drawableWidth="24dp"
+        app:tab_drawableHeight="24dp"
+        app:tab_drawablePadding="2dp"
+        app:tab_selectedTextStyle="bold"
+        app:tab_unSelectTextStyle="normal"
         android:layout_gravity="bottom"
         android:layout_height="60dp" />
 </FrameLayout>

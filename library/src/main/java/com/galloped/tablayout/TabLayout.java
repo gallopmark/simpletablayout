@@ -83,41 +83,41 @@ public class TabLayout extends LinearLayout {
 
     private void setupAttrs(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.TabLayout);
-        final int tabWidth = ta.getDimensionPixelSize(R.styleable.TabLayout_tl_tabWidth, 0);
-        final boolean isTabSpaceEqual = ta.getBoolean(R.styleable.TabLayout_tl_tab_space_equal, true);
+        final int tabWidth = ta.getDimensionPixelSize(R.styleable.TabLayout_tab_width, 0);
+        final boolean isTabSpaceEqual = ta.getBoolean(R.styleable.TabLayout_tab_space_equal, true);
         setTabWidth(tabWidth);
         setTabSpaceEqual(isTabSpaceEqual);
-        mIconWidth = ta.getDimensionPixelSize(R.styleable.TabLayout_tl_iconWidth, 0);
-        mIconHeight = ta.getDimensionPixelSize(R.styleable.TabLayout_tl_iconHeight, 0);
-        mSelectedTextColor = ta.getColor(R.styleable.TabLayout_tl_selectedTextColor, Color.parseColor("#222222"));
-        mUnSelectTextColor = ta.getColor(R.styleable.TabLayout_tl_unSelectTextColor, Color.parseColor("#666666"));
-        final int iconGravity = ta.getInt(R.styleable.TabLayout_tl_iconGravity, ICON_TOP);
+        mIconWidth = ta.getDimensionPixelSize(R.styleable.TabLayout_tab_drawableWidth, 0);
+        mIconHeight = ta.getDimensionPixelSize(R.styleable.TabLayout_tab_drawableHeight, 0);
+        mSelectedTextColor = ta.getColor(R.styleable.TabLayout_tab_selectedTextColor, Color.parseColor("#222222"));
+        mUnSelectTextColor = ta.getColor(R.styleable.TabLayout_tab_unSelectTextColor, Color.parseColor("#666666"));
+        final int iconGravity = ta.getInt(R.styleable.TabLayout_tab_drawableGravity, ICON_TOP);
         setIconGravity(iconGravity);
-        final float drawablePadding = ta.getDimension(R.styleable.TabLayout_tl_drawablePadding, Unit.dp2px(context, 4f));
+        final float drawablePadding = ta.getDimension(R.styleable.TabLayout_tab_drawablePadding, Unit.dp2px(context, 4f));
         setDrawablePadding(drawablePadding);
-        final int textStyle = ta.getInt(R.styleable.TabLayout_tl_textStyle, -1);
-        final int selectedTextStyle = ta.getInt(R.styleable.TabLayout_tl_selectedTextStyle, -1);
-        final int unnSelectTextStyle = ta.getInt(R.styleable.TabLayout_tl_unSelectTextStyle, -1);
+        final int textStyle = ta.getInt(R.styleable.TabLayout_tab_textStyle, -1);
+        final int selectedTextStyle = ta.getInt(R.styleable.TabLayout_tab_selectedTextStyle, -1);
+        final int unnSelectTextStyle = ta.getInt(R.styleable.TabLayout_tab_unSelectTextStyle, -1);
         setSelectTextStyle(selectedTextStyle);
         setUnSelectTextStyle(unnSelectTextStyle);
         setTextStyle(textStyle);
-        final float textSize = ta.getDimension(R.styleable.TabLayout_tl_textSize, Unit.dp2px(context, 13f));
-        final float selectedTextSize = ta.getDimension(R.styleable.TabLayout_tl_selectedTextSize, 0);
-        final float unSelectTextSize = ta.getDimension(R.styleable.TabLayout_tl_unSelectTextSize, 0);
+        final float textSize = ta.getDimension(R.styleable.TabLayout_tab_textSize, Unit.dp2px(context, 13f));
+        final float selectedTextSize = ta.getDimension(R.styleable.TabLayout_tab_selectedTextSize, 0);
+        final float unSelectTextSize = ta.getDimension(R.styleable.TabLayout_tab_unSelectTextSize, 0);
         setSelectedTextSize(selectedTextSize);
         setUnSelectTextSize(unSelectTextSize);
         setTextSize(textSize);
-        final boolean isAnimEnabled = ta.getBoolean(R.styleable.TabLayout_tl_animEnabled, true);
+        final boolean isAnimEnabled = ta.getBoolean(R.styleable.TabLayout_tab_animEnabled, true);
         setAnimEnabled(isAnimEnabled);
         /*动画持续时间默认1000*/
-        final int animDuration = ta.getInteger(R.styleable.TabLayout_tl_animDuration, 1000);
+        final int animDuration = ta.getInteger(R.styleable.TabLayout_tab_animDuration, 1000);
         setAnimDuration(animDuration);
-        final boolean isReselectedAnimEnabled = ta.getBoolean(R.styleable.TabLayout_tl_reselectedAnimEnabled, false);
+        final boolean isReselectedAnimEnabled = ta.getBoolean(R.styleable.TabLayout_tab_reselectedAnimEnabled, false);
         setReselectedAnimEnabled(isReselectedAnimEnabled);
-        final boolean isAnimRecycle = ta.getBoolean(R.styleable.TabLayout_tl_animIsRecycle, false);
+        final boolean isAnimRecycle = ta.getBoolean(R.styleable.TabLayout_tab_animIsRecycle, false);
         setAnimRecycle(isAnimRecycle);
         /*动画开始透明度默认0.2f*/
-        float alphaStart = ta.getFloat(R.styleable.TabLayout_tl_alphaStart, 0.2f);
+        float alphaStart = ta.getFloat(R.styleable.TabLayout_tab_alphaStart, 0.2f);
         setAlphaStart(alphaStart);
         ta.recycle();
     }
